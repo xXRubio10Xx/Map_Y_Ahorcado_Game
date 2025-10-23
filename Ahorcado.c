@@ -3,7 +3,7 @@
 #include <time.h>
 #include <string.h>
 
-void map_print();
+void par();
 void map_update();
 void hang_print();
 void hang_update();
@@ -36,7 +36,7 @@ int main()
     //MAP
     while (posx != 4 || posy != 4)
     {
-        map_print();
+        par();
         map_update();
     }
 
@@ -59,7 +59,7 @@ int main()
     return 0;
 }
 
-void map_print(){
+void par(){
     system("cls");
     for (int i = 0; i < 10; i++)
     {
